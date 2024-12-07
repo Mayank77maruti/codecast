@@ -24,7 +24,9 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install Dependencies
-        run: npm install
+        run: |
+          cd frontend
+          npm install
 
       # Step 4: Dependency Vulnerability Scan (e.g., with `npm audit`)
       - name: Run npm Audit
